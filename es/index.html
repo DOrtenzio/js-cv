@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>CV Dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!--Link per font e favicon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Curriculum</h1>
+        </div>
+        <!--Dati Personali-->
+        <div class="section">
+            <h2>Dati Personali</h2>
+        </div>
+        <div class="box" id="box1">
+            <div class="riga">
+                <h5>Nome e cognome</h5>
+                <input type="text" placeholder="Karaje Giuseppe Mario">
+            </div>
+            <div class="riga">
+                <h5>Indirizzo</h5>
+                <input type="text" placeholder="Via de la cremè, 4, Paleocapa">
+            </div>
+            <div class="riga">
+                <h5>Data di nascita</h5>
+                <input type="date" placeholder="08/09/1990">
+            </div>
+        </div>        
+        <!--Titoli Personali-->
+        <div class="section">
+            <h2>Titoli Personali</h2>
+            <button class="btn" onclick="addNewTitolo()">+</button>
+        </div>
+        <div class="box" id="box2">
+        </div>
+        <!--Esperienze Lavorative-->
+        <div class="section">
+            <h2>Esperienze Lavorative</h2>
+            <button class="btn" onclick="addNewQualifica()">+</button>
+        </div>
+        <div class="box" id="box3">
+        </div>
+    </div>
+</body>
+</html>
