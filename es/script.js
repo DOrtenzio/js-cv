@@ -1,4 +1,5 @@
-function addNewTitolo() {
+function addNewTitolo(event) {
+    event.preventDefault(); // Impedisce il comportamento predefinito del bottone
     box = document.getElementById("box2");
     div = document.createElement("div");
     div.setAttribute("class", "riga2");
@@ -42,7 +43,8 @@ function addNewTitolo() {
     box.appendChild(div);
 }
 
-function addNewQualifica() {
+function addNewQualifica(event) {
+    event.preventDefault(); // Impedisce il comportamento predefinito del bottone
     box = document.getElementById("box3");
     div = document.createElement("div");
     div.setAttribute("class", "riga2");
@@ -53,18 +55,21 @@ function addNewQualifica() {
     h.innerHTML = "Posto:";
     i = document.createElement("input");
     i.setAttribute("type", "text");
+    i.setAttribute("name", "posto");
     i.setAttribute("placeholder","Tecnico");
     //Anno
     h1 = document.createElement("h5");
     h1.innerHTML = "Durata:";
     i1 = document.createElement("input");
     i1.setAttribute("type", "number");
+    i1.setAttribute("name", "durata");
     i1.setAttribute("placeholder","10");
     //Luogo
     h2 = document.createElement("h5");
     h2.innerHTML = "Luogo:";
     i2 = document.createElement("input");
     i2.setAttribute("type", "text");
+    i2.setAttribute("name", "luogo");
     i2.setAttribute("placeholder","Braun GE");
     //Bottone
     bott=document.createElement("button");

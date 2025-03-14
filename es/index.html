@@ -14,42 +14,48 @@
     <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <h1>Curriculum</h1>
-        </div>
-        <!--Dati Personali-->
-        <div class="section">
-            <h2>Dati Personali</h2>
-        </div>
-        <div class="box" id="box1">
-            <div class="riga">
-                <h5>Nome e cognome</h5>
-                <input type="text" placeholder="Karaje Giuseppe Mario">
+    <form action="">
+        <div class="container">
+            <div class="logo">
+                <h1>Curriculum</h1>
             </div>
-            <div class="riga">
-                <h5>Indirizzo</h5>
-                <input type="text" placeholder="Via de la cremè, 4, Paleocapa">
+            <!--Dati Personali-->
+            <div class="section">
+                <h2>Dati Personali</h2>
             </div>
-            <div class="riga">
-                <h5>Data di nascita</h5>
-                <input type="date" placeholder="08/09/1990">
+            <div class="box" id="box1">
+                <div class="riga">
+                    <h5>Nome e cognome</h5>
+                    <input type="text" placeholder="Karaje Giuseppe Mario" name="name_cognom">
+                </div>
+                <div class="riga">
+                    <h5>Indirizzo</h5>
+                    <input type="text" placeholder="Via de la cremè, 4, Paleocapa" name="indirizzo">
+                </div>
+                <div class="riga">
+                    <h5>Data di nascita</h5>
+                    <input type="date" placeholder="08/09/1990" name="data">
+                </div>
+            </div>        
+            <!--Titoli Personali-->
+            <div class="section">
+                <h2>Titoli Personali</h2>
+                <button class="btn" onclick="addNewTitolo(event)">+</button>
             </div>
-        </div>        
-        <!--Titoli Personali-->
-        <div class="section">
-            <h2>Titoli Personali</h2>
-            <button class="btn" onclick="addNewTitolo()">+</button>
+            <div class="box" id="box2">
+            </div>
+            <!--Esperienze Lavorative-->
+            <div class="section">
+                <h2>Esperienze Lavorative</h2>
+                <button class="btn" onclick="addNewQualifica(event)">+</button>
+            </div>
+            <div class="box" id="box3">
+            </div>
         </div>
-        <div class="box" id="box2">
+        <div class="box">
+            <input class="btn btnInvio" type="submit" value="Invia">
+            <input class="btnR btnInvio" type="reset" value="Cancella">
         </div>
-        <!--Esperienze Lavorative-->
-        <div class="section">
-            <h2>Esperienze Lavorative</h2>
-            <button class="btn" onclick="addNewQualifica()">+</button>
-        </div>
-        <div class="box" id="box3">
-        </div>
-    </div>
+    </form>
 </body>
 </html>

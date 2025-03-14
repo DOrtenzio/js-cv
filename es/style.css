@@ -103,6 +103,14 @@ input {
     background-color: #662807;
 }
 
+.btnInvio{
+    width: 45%;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
 /*Scritta iniziale*/
 
 .logo h1 {
