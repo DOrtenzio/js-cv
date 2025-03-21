@@ -11,7 +11,7 @@ function addNewTitolo(event) {
     i = document.createElement("input");
     i.setAttribute("type", "text");
     i.setAttribute("name", "titolo[]");
-    i.setAttribute("placeholder","Laurea Magisterale");
+    i.setAttribute("placeholder","Laurea Magistrale");
     //Anno
     h1 = document.createElement("h5");
     h1.innerHTML = "Anno:";
