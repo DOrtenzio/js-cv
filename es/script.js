@@ -24,7 +24,7 @@ function addNewTitolo(event) {
     h2.innerHTML = "Luogo:";
     i2 = document.createElement("input");
     i2.setAttribute("type", "text");
-    i2.setAttribute("name", "luogo[]");
+    i2.setAttribute("name", "luogo_titolo[]");
     i2.setAttribute("placeholder","Curno, Monaco di Baviera, GE");
     //Bottone
     bott=document.createElement("button");
@@ -72,7 +72,7 @@ function addNewQualifica(event) {
     h2.innerHTML = "Luogo:";
     i2 = document.createElement("input");
     i2.setAttribute("type", "text");
-    i2.setAttribute("name", "luogo[]");
+    i2.setAttribute("name", "luogo_lavoro[]");
     i2.setAttribute("placeholder","Braun GE");
     //Bottone
     bott=document.createElement("button");
