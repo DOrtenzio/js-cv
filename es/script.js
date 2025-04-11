@@ -1,3 +1,5 @@
+"use strict"
+
 function addNewTitolo(event) {
     event.preventDefault(); // Impedisce il comportamento predefinito del bottone
     box = document.getElementById("box2");
